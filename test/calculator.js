@@ -9,22 +9,22 @@ const divide = require('../lib/divide');
 describe('calculator.js', () => {
   describe('add', () => {
     it('should call add()', () => {
-      assert.equal(calculator({num1: 4, Operation: '+', num2: 2}), 6);
+      assert.equal(calculator([4, '+', 2]), 6);
     })
   });
   describe('subtract', () => {
     it('should call subtract()', () => {
-      assert.equal(calculator({num1: 6, Operation: '-', num2: 2}), 4);
+      assert.equal(calculator([6, '-', 2]), 4);
     })
   })
   describe('multiply', () => {
     it('should call multiply()', () => {
-      assert.equal(calculator({num1: 3, Operation: 'x', num2: 5}), 15);
+      assert.equal(calculator([3, 'x', 5]), 15);
     })
   })
   describe('divide', () => {
     it('should call divide()', () => {
-      assert.equal(calculator({num1: 10, Operation: '/', num2: 2}), 5);
+      assert.equal(calculator([10, '/', 2]), 5);
     })
   })
 })
