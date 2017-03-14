@@ -1,19 +1,18 @@
 {
-  "name": "nodetemplate",
+  "name": "calc-tdd",
   "version": "1.0.0",
-  "description": "template for node exercises",
-  "main": "main.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/j-West/nodeTemplate.git"
+    "test": "mocha"
   },
   "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/j-West/nodeTemplate/issues"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
   },
-  "homepage": "https://github.com/j-West/nodeTemplate#readme"
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
 }
